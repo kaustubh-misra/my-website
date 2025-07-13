@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +25,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="bg-accent text-primary min-h-screen transition-colors" style={{ backgroundColor: '#FFFAFA' }}>
+        <nav className="w-full bg-primary flex items-center justify-between" style={{ backgroundColor: '#16348C', height: '4cm', border: '1px solid #000' }}>
+          <div className="font-bold site-title" style={{ fontSize: '34px', color: '#FFFFFF', marginLeft: '1.5cm', fontFamily: 'Times New Roman, Times, serif' }}>Kaustubh Misra</div>
+          <div className="flex" style={{ gap: '2cm', marginRight: '1.5cm' }}>
+            <Link href="/about" className="font-semibold hover:underline" style={{ fontSize: '24px', color: '#FFFFFF' }}>About Me</Link>
+            <Link href="/work" className="font-semibold hover:underline" style={{ fontSize: '24px', color: '#FFFFFF' }}>My Work</Link>
+            <Link href="/blog" className="font-semibold hover:underline" style={{ fontSize: '24px', color: '#FFFFFF' }}>Blog</Link>
+            <Link href="/contact" className="font-semibold hover:underline" style={{ fontSize: '24px', color: '#FFFFFF' }}>Contact</Link>
+            <Link href="/photography" className="font-semibold hover:underline" style={{ fontSize: '24px', color: '#FFFFFF' }}>Photography</Link>
+          </div>
+        </nav>
         {children}
       </body>
     </html>
