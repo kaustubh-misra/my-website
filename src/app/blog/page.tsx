@@ -20,7 +20,7 @@ export default function Blog() {
         <div className="flex flex-col items-start justify-center w-full" style={{ gap: '2.0em' }}>
           <ul className="list-disc pl-6 space-y-[2em]">
             <li><a href="https://www.investindia.gov.in/team-india-blogs/india-australia-ecta-deal-partnership" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold" style={{ fontSize: '24px' }}>Thoughts on India-Australia Economic Cooperative Trade Agreement</a></li>
-            <li><a href="https://navrangashoka.wordpress.com/2021/03/31/foucault-from-the-valley-sovereignty-and-biopower-through-the-lens-of-vishal-bhardwajs-haider/" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold" style={{ fontSize: '24px' }}>Foucault, From The Valley: Sovereignty And Biopower Through The Lens Of Vishal Bhardwaj's Haider</a></li>
+            <li><a href="https://navrangashoka.wordpress.com/2021/03/31/foucault-from-the-valley-sovereignty-and-biopower-through-the-lens-of-vishal-bhardwajs-haider/" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold" style={{ fontSize: '24px' }}>Foucault, From The Valley: Sovereignty And Biopower Through The Lens Of Vishal Bhardwaj&apos;s Haider</a></li>
           </ul>
         </div>
       </section>
